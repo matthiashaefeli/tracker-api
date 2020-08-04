@@ -1,24 +1,33 @@
-# README
+# Tracker api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# This api is based on the complete react native and redux course on udemy
 
-Things you may want to cover:
+In the useedmy course we create a express and mongoDB api
 
-* Ruby version
+This rails api does the same function as the express api
 
-* System dependencies
+# Requirements
 
-* Configuration
+This code has been run and tested by Ruby 2.7.0 and Rails 6.0.3.2
 
-* Database creation
+# How to set up locally
 
-* Database initialization
+```
+$ git clone https://github.com/matthiashaefeli/tracker-api.git
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+```
 
-* How to run the test suite
+# Running the server
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails s
+```
 
-* Deployment instructions
+# Run test suit
 
-* ...
+```
+```
+
+
