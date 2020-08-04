@@ -1,8 +1,8 @@
 # Tracker api
 
-# This api is based on the complete react native and redux course on udemy
+## This api is based on the complete react native and redux course on udemy
 
-In the useedmy course we create a express and mongoDB api
+In the udemy course we create a express and mongoDB api
 
 This rails api does the same function as the express api
 
