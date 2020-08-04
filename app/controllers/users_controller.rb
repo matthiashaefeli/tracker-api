@@ -12,7 +12,15 @@ class UsersController < ApplicationController
   end
 
   def signin
-    binding.pry
+    user = User.find_by(user_params)
+    if user
+      token = JsonWebToken.encode({
+        userId: user.id
+      })
+      render json: {token: token}.to_json
+    else
+      render json: {error: 'Invalid Request'}, status: :unauthorized
+    end
   end
 
   private
