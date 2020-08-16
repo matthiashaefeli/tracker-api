@@ -1,4 +1,11 @@
 class Location < ApplicationRecord
   belongs_to :track
-  validates :latitude, :longitude, :altitude, :accuracy, :heading, :speed, presence: :true
+  has_one :coord
+
+  def as_json(options = {})
+    json = { :_id => id,
+             :timestamp => timestamp }
+    json[:coords] = self.coord.as_json()
+    json
+  end
 end
