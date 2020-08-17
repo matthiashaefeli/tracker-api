@@ -3,9 +3,9 @@
 ## This api is based on the complete react native and redux course on udemy
 
 In the udemy course we create a express and mongoDB api.
-For the app to work you need the express server and ngrok.
+For the app to work you need the express server and ngrok, and a mongoDB account.
 
-This rails api does the same function as the express api
+This rails api does the same function all in one,
 just run rails s and that's it.
 
 # Requirements
