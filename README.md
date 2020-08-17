@@ -1,6 +1,6 @@
 # Tracker api
 
-## This api is based on the complete react native and redux course on udemy
+## This API is based on the complete react native and redux course on udemy
 
 In the udemy course we create a express and mongoDB api.
 For the app to work you need a express server, ngrok, and a mongoDB account.
