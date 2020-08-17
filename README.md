@@ -1,4 +1,4 @@
-# Tracker api
+# Tracker API
 
 ## This API is based on the complete react native and redux course on udemy
 
