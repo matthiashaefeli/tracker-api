@@ -45,7 +45,9 @@ baseURL: 'http://localhost:3000'
 
 POST:localhost:3000/signup
 
-Headers: KEY: Content_type VALUE: application/json
+Headers: 
+
+KEY: Content_type VALUE: application/json
 
 Body: raw
 
@@ -62,7 +64,9 @@ Body: raw
 
 POST:localhost:3000/signin
 
-Headers: KEY: Content_type VALUE: application/json
+Headers: 
+
+KEY: Content_type VALUE: application/json
 
 Body: raw
 
@@ -79,8 +83,11 @@ Body: raw
 
 POST:localhost:3000/tracks
 
-Headers: KEY: Authorization VALUE: Bearer token
-         KEY: Content_type VALUE: application/json
+Headers: 
+
+KEY: Authorization VALUE: Bearer token
+         
+KEY: Content_type VALUE: application/json
          
 Body: raw
 
