@@ -38,3 +38,76 @@ in tracker.js change baseURL to
 ```
 baseURL: 'http://localhost:3000'
 ```
+
+# Sign up user
+
+## Postman
+
+POST:localhost:3000/signup
+
+Headers: KEY: Content_type VALUE: application/json
+
+Body: raw
+
+```
+{
+    "email": "test@test.com",
+    "password": "mypassword"
+}
+```
+
+# Sign in User
+
+## Postman
+
+POST:localhost:3000/signin
+
+Headers: KEY: Content_type VALUE: application/json
+
+Body: raw
+
+```
+{
+    "email": "test@test.com",
+    "password": "mypassword"
+}
+```
+
+# Create Track
+
+## Postman
+
+POST:localhost:3000/tracks
+
+Headers: KEY: Authorization VALUE: Bearer token
+         KEY: Content_type VALUE: application/json
+         
+Body: raw
+
+```
+{
+    "name": "my track",
+    "locations": [
+        {
+            "timestamp": 10000000,
+            "coords": {
+                "latitude": 100,
+                "longitude": 100,
+                "altitude": 100,
+                "accuracy": 100,
+                "heading": 100,
+                "speed": 100
+            }
+        }
+    ]
+}
+```
+
+# Tracks
+
+## Postman
+
+GET:localhost:3000/tracks
+
+Headers: KEY: Authorization VALUE: Bearer token
+
