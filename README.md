@@ -103,7 +103,8 @@ Body: raw
                 "altitude": 100,
                 "accuracy": 100,
                 "heading": 100,
-                "speed": 100
+                "speed": 100,
+                "altitudeAccuracy": 200
             }
         }
     ]
