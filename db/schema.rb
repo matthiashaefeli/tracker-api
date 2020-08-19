@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_08_16_181237) do
     t.integer "accuracy"
     t.integer "heading"
     t.integer "speed"
+    t.integer "altitudeAccuracy"
     t.integer "location_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

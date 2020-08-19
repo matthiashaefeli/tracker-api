@@ -7,6 +7,7 @@ class CreateCoords < ActiveRecord::Migration[6.0]
       t.integer :accuracy
       t.integer :heading
       t.integer :speed
+      t.integer :altitudeAccuracy
       t.integer :location_id
 
       t.timestamps
