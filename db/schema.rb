@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(version: 2020_08_16_181237) do
   enable_extension "plpgsql"
 
   create_table "coords", force: :cascade do |t|
-    t.integer "latitude"
-    t.integer "longitude"
-    t.integer "altitude"
-    t.integer "accuracy"
-    t.integer "heading"
-    t.integer "speed"
-    t.integer "altitudeAccuracy"
+    t.decimal "latitude", precision: 10, scale: 6
+    t.decimal "longitude", precision: 10, scale: 6
+    t.decimal "altitude", precision: 10, scale: 6
+    t.decimal "accuracy", precision: 10, scale: 6
+    t.decimal "heading", precision: 10, scale: 6
+    t.decimal "speed", precision: 10, scale: 6
+    t.decimal "altitudeAccuracy", precision: 10, scale: 6
     t.integer "location_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

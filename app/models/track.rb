@@ -5,8 +5,8 @@ class Track < ApplicationRecord
 
   def as_json(options = {})
     json = { :name => name,
-             :_id => id,
-             :userId => user_id }
+             :_id => id.to_s,
+             :userId => user_id.to_s }
     json[:locations] = self.locations.as_json()
     json
   end
