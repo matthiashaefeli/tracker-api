@@ -3,7 +3,7 @@ class Location < ApplicationRecord
   has_one :coord
 
   def as_json(options = {})
-    json = { :_id => id,
+    json = { :_id => id.to_s,
              :timestamp => timestamp }
     json[:coords] = self.coord.as_json()
     json
