@@ -29,7 +29,9 @@ $ rails s
 
 # Run test suit
 
-not available, working on
+```
+$ rspec
+```
 
 # Changes in the tracks app
 
